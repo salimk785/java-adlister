@@ -4,8 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "MarcoHelloWorld", urlPatterns = "/Hello")
-public class HelloWorldServlet extends HttpServlet {
+@WebServlet(name = "MarcoCount", urlPatterns = "/Count")
+public class count extends HttpServlet {
     int count = 0;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -13,13 +13,13 @@ public class HelloWorldServlet extends HttpServlet {
 
         if(name == null) {
             response.setContentType("text/html");
-            response.getWriter().println("<h3>Hello World!</h3>");
+            response.getWriter().println("<h3>Hello Codeup!</h3>");
             name = "Hello World!";
         }else{
             response.getWriter().println("Hello, " + name + "!");
 
         }
-            count++;
+        count++;
         response.getWriter().println("I visited the page: " + count + " times.");
 
     }
