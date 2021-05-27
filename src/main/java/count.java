@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "MarcoCount", urlPatterns = "/Count")
+@WebServlet(name = "MarcoCount", urlPatterns = "/count")
 public class count extends HttpServlet {
     int count = 0;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
