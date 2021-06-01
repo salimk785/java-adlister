@@ -14,10 +14,10 @@
 <body>
 <h1>Here are all the Ads:</h1>
 
-<c:forEach var="Ads" items="${Ads}">
-    <div class="Ads">
-        <h2>${Ads.name}</h2>
-        <p>Price: $ ${Ads.price}</p>
+<c:forEach var="Ad" items="${Ad}">
+    <div class="Ad">
+        <h2>${Ad.title}</h2>
+        <p>${Ad.description}</p>
     </div>
 </c:forEach>
 </body>
