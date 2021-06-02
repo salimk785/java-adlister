@@ -11,7 +11,7 @@ public class ShowAdsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //"Hey Servlet, go instantiate from that getProductsDao method I set up!" == get a DAO object
-        Ads ListAdsDao = DaoFactory.getListAdsDao();
+        Ad ListAdsDao = DaoFactory.getListAdsDao();
         //Let's get all the products
 
         List<Ad> showAds = ListAdsDao.all();

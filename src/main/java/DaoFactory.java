@@ -8,11 +8,5 @@ public class DaoFactory {
         return adsDao;
     }
 
-    public static Ads getListAdsDao() {
-        if (adsDao == null) {
-            adsDao = new ListAdsDao();
-        }
-        return adsDao;
-    }
     }
 
