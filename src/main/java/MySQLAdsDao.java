@@ -7,8 +7,8 @@ public class MySQLAdsDao implements Ads{
 
 
 
-    public MySQLAdsDao() {
-        Config config = new Config();
+    public MySQLAdsDao(Config config) {
+
         try {
             connection = DriverManager.getConnection(
                     config.getUrl(),
